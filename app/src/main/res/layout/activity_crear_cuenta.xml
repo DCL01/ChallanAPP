@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <!-- Filtro Gris con Transparencia -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3D3D3D3" /> <!-- Un gris claro con transparencia -->
+
+    <!-- Contenido Principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/challan_logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"/>
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/password2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Spinner para Seleccionar el Tipo de Cuenta -->
+        <Spinner
+            android:id="@+id/accountTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de Crear Cuenta -->
+        <Button
+            android:id="@+id/CreateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:padding="12dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para Regresar a la Página de Login -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar a Login"
+            android:padding="12dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</FrameLayout>

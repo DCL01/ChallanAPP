@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.challanapp.Home_Chalan"
+    android:id="@+id/main"
+    >
+    <!-- Color de fondo distintivo -->
+
+    <!-- Contenido Principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center"
+        android:background="#B3D3D3D3"> <!-- Fondo gris translúcido para los elementos -->
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/challan_logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"/>
+
+        <Button
+            android:id="@+id/buttonProjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proyectos"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/buttonCatalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catálogos"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

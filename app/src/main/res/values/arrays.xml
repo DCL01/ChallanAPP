@@ -1,0 +1,73 @@
+<resources>
+    <string-array name="estados_array">
+        <item>Aguascalientes</item>
+        <item>Baja California</item>
+        <item>Baja California Sur</item>
+        <item>Campeche</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Ciudad de México</item>
+        <item>Coahuila</item>
+        <item>Colima</item>
+        <item>Durango</item>
+        <item>Estado de México</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalisco</item>
+        <item>Michoacán</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo León</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+        <item>Querétaro</item>
+        <item>Quintana Roo</item>
+        <item>San Luis Potosí</item>
+        <item>Sinaloa</item>
+        <item>Sonora</item>
+        <item>Tabasco</item>
+        <item>Tamaulipas</item>
+        <item>Tlaxcala</item>
+        <item>Veracruz</item>
+        <item>Yucatán</item>
+        <item>Zacatecas</item>
+    </string-array>
+
+    <string-array name="habilidades_array">
+        <item>Albañilería</item>
+        <item>Carpintería</item>
+        <item>Electricidad</item>
+        <item>Fontanería</item>
+        <item>Pintura</item>
+        <item>Jardinería</item>
+        <item>Plomería</item>
+        <item>Soldadura</item>
+        <item>Instalación de Pisos y Azulejos</item>
+        <item>Yesería</item>
+        <item>Montaje de Andamios</item>
+        <item>Construcción en Seco (Drywall)</item>
+        <item>Trabajo en Techos</item>
+        <item>Instalación de Ventanas y Puertas</item>
+        <item>Manejo de Equipos Pesados</item>
+        <item>Mantenimiento y Reparaciones Generales</item>
+        <item>Corte de Césped y Paisajismo</item>
+        <item>Trabajos de Hormigón</item>
+        <item>Impermeabilización</item>
+        <item>Reparación de Estructuras</item>
+        <item>Instalación de Sistemas de Riego</item>
+        <item>Construcción de Muros y Cercas</item>
+        <item>Reparación de Electrodomésticos</item>
+        <item>Construcción de Muebles</item>
+        <item>Instalación de Paneles de Yeso</item>
+        <item>Refacciones de Estructuras Metálicas</item>
+        <item>Montaje de Estructuras de Madera</item>
+        <item>Trabajo en Construcción de Caminos</item>
+        <item>Soldadura y Corte de Metales</item>
+        <item>Instalación de Sistemas de Calefacción y Refrigeración</item>
+    </string-array>
+    <string-array name="account_types_array">
+        <item>Usuario</item>
+        <item>Chalan</item>
+    </string-array>
+</resources>

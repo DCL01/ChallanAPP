@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.challanapp.Info_Chalan"
+    android:id="@+id/main">
+
+    <!-- Filtro Gris con Transparencia -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3D3D3D3" />
+
+    <!-- Contenido Principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/challan_logo" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999" />
+
+        <!-- Menú Desplegable para Seleccionar Estado -->
+        <Spinner
+            android:id="@+id/stateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Spinner para Seleccionar Habilidades -->
+        <Spinner
+            android:id="@+id/skillsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <!-- Botones para Agregar y Eliminar Habilidad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addSkillButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="Agregar Habilidad"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/removeSkillButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="Eliminar Habilidad"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Panel para Mostrar Habilidades Agregadas -->
+        <TextView
+            android:id="@+id/addedSkillsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Habilidades Agregadas"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addedSkillsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+        <!-- Botón para Guardar Cambios -->
+        <Button
+            android:id="@+id/saveChangesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Guardar Cambios"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón para Regresar a Home -->
+        <Button
+            android:id="@+id/backToHomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Regresar a Home"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main">
+
+    <!-- Filtro Gris con Transparencia -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3D3D3D3" />
+
+    <!-- Contenido Principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.chalan.Home_Usuario"
+
+        android:padding="32dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/challan_logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"/>
+
+        <Button
+            android:id="@+id/Crear_Page_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proyectos"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/Ver_Productos_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catálogo"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/Ver_Challan_Page_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chalantes"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/Editar_Perfil_Chalan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:elevation="4dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</FrameLayout>

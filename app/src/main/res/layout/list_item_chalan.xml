@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/chalanName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Chalán"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/chalanDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Chalán"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/chalanSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habilidades"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <!-- Línea Divisoria -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

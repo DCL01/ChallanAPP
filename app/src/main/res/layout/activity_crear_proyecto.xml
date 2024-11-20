@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.challanapp.Crear_Proyecto"
+    android:id="@+id/main">
+
+    <!-- Filtro Gris con Transparencia -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3D3D3D3" />
+
+    <!-- Contenido Principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/projectNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Proyecto"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/projectDescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción del Proyecto"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/projectMeasurementsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medidas"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Spinner para Seleccionar Tipo de Proyecto -->
+            <Spinner
+                android:id="@+id/projectTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <!-- Spinner para Seleccionar Chalán -->
+            <Spinner
+                android:id="@+id/chalanSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <!-- Menú Desplegable para Seleccionar Ubicación -->
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="4dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <!-- Botón para Crear Proyecto -->
+            <Button
+                android:id="@+id/createProjectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear Proyecto"
+                android:padding="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Botón para Regresar a Home -->
+            <Button
+                android:id="@+id/backToHomeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regresar a Home"
+                android:padding="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
